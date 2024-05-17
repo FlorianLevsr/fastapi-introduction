@@ -22,7 +22,6 @@ class UserRepository:
     def list(self) -> List[UserModel]:
         list = []
         for user in self.data:
-            print(user)
             list.append(
                 UserModel(
                     user["id"],
